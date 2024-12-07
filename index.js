@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94774609569']
+const ownerNumber = ['94756209818']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting SHANUWA-MD BOT ✅...");
+console.log("Connecting YAHAM-MD BOT ✅...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `SHANUWA-MD CONNETED SUCCESSFULLY ✅\n\nPREFIX:${prefix}`;
+let up = `YAHAM-MD CONNETED SUCCESSFULLY ✅\n\nPREFIX:${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/5B1Kx5Y/7770.jpg` }, caption: up })
 
@@ -140,11 +140,11 @@ if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
 //=========OWNER - REACTION ===============================  
-if(senderNumber.includes("94774609569")){
+if(senderNumber.includes("94756209818")){
 if(isReact) return
 m.react("👨‍💻")
 }
-if(senderNumber.includes("94721671087")){
+if(senderNumber.includes("94756209814")){
 if(isReact) return
 m.react("💃")
 }
